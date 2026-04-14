@@ -18,7 +18,7 @@ setformData({...formData,[e.target.name]:e.target.value})
 const login=async()=>{
 console.log(" login function executed",formData);
 let responseData;
-await fetch('http://localhost:4000/login',{
+await fetch('http://https://webuy-backend-0459.onrender.com/login',{
   method:'POST',
   headers:{
     Accept:'application/form-data',
@@ -41,7 +41,7 @@ else{
 const signup=async()=>{
 console.log(" signup function executed",formData);
 let responseData;
-await fetch('http://localhost:4000/signup',{
+await fetch('http://https://webuy-backend-0459.onrender.com/signup',{
   method:'POST',
   headers:{
     Accept:'application/form-data',
