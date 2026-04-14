@@ -12,7 +12,7 @@ const Shopcontextprovider = ({ children }) => {
 
   // ================= FETCH PRODUCTS =================
   useEffect(() => {
-    fetch("http://localhost:4000/allproducts")
+    fetch("https://webuy-backend-0459.onrender.com/allproducts")
       .then((res) => res.json())
       .then((data) => {
         setAllProduct(data);
