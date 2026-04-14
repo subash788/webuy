@@ -1,0 +1,102 @@
+/* Addproduct.css */
+
+/* Container */
+.add-product {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Label and input groups */
+.addproduct-itemfields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.addproduct-itemfields p {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Input styling */
+.addproduct-itemfields input,
+.add-product-selector {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.addproduct-itemfields input:focus,
+.add-product-selector:focus {
+  border-color: #4b8bff;
+  box-shadow: 0 0 4px rgba(75, 139, 255, 0.3);
+}
+
+/* Category dropdown */
+.add-product-selector {
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+/* Upload thumbnail */
+.addproduct-thumbnail-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-color: #f9f9f9;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.addproduct-thumbnail-image:hover {
+  border-color: #4b8bff;
+  transform: scale(1.05);
+}
+
+/* Add button */
+.addproduct-button {
+  width: 100%;
+  background-color: #4b8bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addproduct-button:hover {
+  background-color: #3a73e0;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .add-product {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .addproduct-thumbnail-image {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,35 @@
+.breadcrum {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+  margin: 1rem 0;
+  flex-wrap: wrap; /* keeps it responsive */
+}
+
+/* Arrow icons */
+.breadcrum img {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+}
+
+/* Each breadcrumb item */
+.breadcrum span {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.breadcrum span:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Highlight last item (current page) */
+.breadcrum span:last-child {
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
+  cursor: default;
+}

@@ -1,0 +1,92 @@
+.list-product {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.list-product h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Header Row */
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.listproduct-format-main p {
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Product Row Styles */
+.listproduct-allproducts {
+  margin-top: 15px;
+}
+
+.listproduct-format {
+  margin-bottom: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.listproduct-format:hover {
+  background-color: #f0f4f8;
+}
+
+/* Product Image */
+.listproduct-product-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Remove Icon */
+.listproduct-remove-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.listproduct-remove-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .listproduct-format-main {
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-row-gap: 8px;
+    padding: 10px;
+  }
+
+  .listproduct-format-main p:nth-child(n + 4) {
+    display: none;
+  }
+
+  .listproduct-product-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .listproduct-remove-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
