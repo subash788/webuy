@@ -13,7 +13,7 @@ const ChatPage = () => {
 
   // Connect socket once
   useEffect(() => {
-    const s = io("http://localhost:4000");
+    const s = io("https://webuy-backend-0459.onrender.com");
     setSocket(s);
 
     return () => s.disconnect();
