@@ -44,7 +44,7 @@ const Shopcontextprovider = ({ children }) => {
 
     try {
       // 1. Create order on backend
-      const response = await fetch("http://localhost:4000/order", {
+      const response = await fetch("https://webuy-backend-0459.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount }),
@@ -60,7 +60,7 @@ const Shopcontextprovider = ({ children }) => {
         order_id: order.id, 
         handler: async (response) => {
           // 2. Verify payment on backend after user completes the modal
-          const verifyRes = await fetch("http://localhost:4000/verify", {
+          const verifyRes = await fetch("https://webuy-backend-0459.onrender.com/verify", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(response),
